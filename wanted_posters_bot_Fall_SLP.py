@@ -5,6 +5,7 @@ from io import BytesIO
 
 intents = nextcord.Intents.default()
 intents.message_content = True
+intents.members = True 
 client = commands.Bot(command_prefix="!", intents=intents)
 
 @client.command()
